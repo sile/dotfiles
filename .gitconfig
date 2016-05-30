@@ -1,0 +1,11 @@
+[user]
+        name = Takeru Ohta
+        email = phjgt30@gmail.com
+[alias]
+        hist = log --graph --pretty=format:'%Cred%h%Creset - %cd | %s %Cgreen(%cr)%C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=short
+        current = symbolic-ref --short HEAD
+[core]
+        excludesfile = ~/.gitignore
+        whitespace = false
+[push]
+        default = simple
