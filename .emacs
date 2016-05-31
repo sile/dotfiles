@@ -83,3 +83,4 @@
 (setq company-tooltip-align-annotations t)
 
 (setq racer-rust-src-path "/home/ohta/dev/rust/rust/src/")
+(setq compilation-ask-about-save nil)
