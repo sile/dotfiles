@@ -1,6 +1,6 @@
 [user]
         name = Takeru Ohta
-        email = phjgt30@gmail.com
+        email = phjgt308@gmail.com
 [alias]
         hist = log --graph --pretty=format:'%Cred%h%Creset - %cd | %s %Cgreen(%cr)%C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=short
         current = symbolic-ref --short HEAD

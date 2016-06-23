@@ -79,7 +79,7 @@
 (add-hook 'racer-mode-hook #'company-mode)
 
 (add-hook 'rust-mode-hook '(lambda ()
-                             (local-set-key (kbd "TAB") #'company-indent-or-complete-common))) ;
+                             (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (setq company-tooltip-align-annotations t)
 
 (setq racer-rust-src-path "/home/ohta/dev/rust/rust/src/")
