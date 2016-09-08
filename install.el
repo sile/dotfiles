@@ -7,6 +7,5 @@
 (package-install 'rust-mode)
 (package-install 'cargo)
 (package-install 'toml-mode)
-(package-install 'rustfmt)
 (package-install 'racer)
 (package-install 'company-racer)
