@@ -82,5 +82,5 @@
                              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (setq company-tooltip-align-annotations t)
 
-(setq racer-rust-src-path "/home/ohta/dev/rust/rust/src/")
+(setq racer-rust-src-path (concat (file-name-as-directory (getenv "HOME")) "dev/rust/rust/src/"))
 (setq compilation-ask-about-save nil)
