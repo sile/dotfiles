@@ -9,3 +9,4 @@
 (package-install 'toml-mode)
 (package-install 'racer)
 (package-install 'company-racer)
+(package-install 'markdown-mode)
