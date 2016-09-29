@@ -15,7 +15,7 @@
     (set-cursor-color "Gray")
     (set-frame-parameter nil 'alpha 80) ;透明度
     ))
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 115)
 
 (setq-default indent-tabs-mode nil)
 
