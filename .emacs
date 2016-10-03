@@ -84,3 +84,20 @@
 
 (setq racer-rust-src-path (concat (file-name-as-directory (getenv "HOME")) "dev/rust/rust/src/"))
 (setq compilation-ask-about-save nil)
+
+;;;
+;;; misc
+;;;
+(package-initialize)
+
+;; git-gutter
+(global-git-gutter-mode t)
+
+;; helm
+(helm-mode 1)
+
+;; heml-git-grep
+(global-set-key (kbd "C-c g") 'helm-git-grep)
+(define-key isearch-mode-map (kbd "C-c g") 'helm-git-grep-from-isearch)
+(eval-after-load 'helm
+  '(define-key helm-map (kbd "C-c g") 'helm-git-grep-from-helm))
