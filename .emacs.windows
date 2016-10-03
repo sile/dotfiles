@@ -8,12 +8,11 @@
  '(menu-bar-mode nil)
  '(tool-bar-mode nil))
 
-;; Color
 (if window-system (progn
     (set-background-color "Black")
     (set-foreground-color "LightGray")
     (set-cursor-color "Gray")
-    (set-frame-parameter nil 'alpha 80) ;透明度
+    (set-frame-parameter nil 'alpha 80)
     ))
 (set-face-attribute 'default nil :height 115)
 
@@ -28,14 +27,6 @@
 ;;;
 ;;; for rust
 ;;;
-(require 'cl)
-(defun save-and-compile ()
-  (interactive)
-  (save-buffer)
-  (compile compile-command))
-
-(global-set-key "\C-c\C-i" 'save-and-compile)
-
 (add-hook 'rust-mode-hook #'rust-enable-format-on-save)
 (add-hook 'rust-mode-hook #'cargo-minor-mode)
 (add-hook 'rust-mode-hook #'racer-mode)
