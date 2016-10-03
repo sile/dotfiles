@@ -63,14 +63,6 @@
 ;;;
 ;;; for rust
 ;;;
-(require 'cl)
-(defun save-and-compile ()
-  (interactive)
-  (save-buffer)
-  (compile compile-command))
-
-(global-set-key "\C-c\C-i" 'save-and-compile)
-
 (add-hook 'rust-mode-hook #'rust-enable-format-on-save)
 (add-hook 'rust-mode-hook #'cargo-minor-mode)
 (add-hook 'rust-mode-hook #'racer-mode)
