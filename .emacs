@@ -96,8 +96,5 @@
 ;; helm
 (helm-mode 1)
 
-;; heml-git-grep
-(global-set-key (kbd "C-c g") 'helm-git-grep)
-(define-key isearch-mode-map (kbd "C-c g") 'helm-git-grep-from-isearch)
-(eval-after-load 'helm
-  '(define-key helm-map (kbd "C-c g") 'helm-git-grep-from-helm))
+;; heml-ag
+(global-set-key (kbd "C-c g") 'helm-ag-project-root)
