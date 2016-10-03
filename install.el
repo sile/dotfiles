@@ -10,3 +10,7 @@
 (package-install 'racer)
 (package-install 'company-racer)
 (package-install 'markdown-mode)
+(package-install 'git-gutter)
+(package-install 'helm)
+(package-install 'helm-git-grep)
+(package-install 'helm-ls-git)
