@@ -1,4 +1,4 @@
-;;; editor config
+(setq helm-ag-base-command "rg --vimgrep --no-heading");;; editor config
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -54,3 +54,4 @@
 
 ;; heml-ag
 (global-set-key (kbd "C-c g") 'helm-ag-project-root)
+(setq helm-ag-base-command "rg --vimgrep --no-heading")
