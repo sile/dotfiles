@@ -34,3 +34,4 @@ fi
 rustup update
 cargo install rustfmt
 cargo install racer
+cargo install ripgrep
