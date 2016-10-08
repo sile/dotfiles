@@ -44,7 +44,7 @@
 		    (delete-char (length ts))))
     (while (< beg end)
       (let ((c (char-after beg)))
-      (insert-char (if (char-equal c ?\t) ?\t ?  ) 1))
+(setq helm-ag-base-command "rg --vimgrep --no-heading")      (insert-char (if (char-equal c ?\t) ?\t ?  ) 1))
       (setq beg (+ beg 1)))
     (insert-char ?  2)))
 (global-set-key [backtab] 'backtab)
@@ -90,3 +90,4 @@
 
 ;; heml-ag
 (global-set-key (kbd "C-c g") 'helm-ag-project-root)
+(setq helm-ag-base-command "rg --vimgrep --no-heading")
