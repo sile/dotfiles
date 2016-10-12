@@ -50,6 +50,12 @@
 (global-set-key [backtab] 'backtab)
 
 ;;;
+;;; for eshell
+;;;
+(setq-default eshell-history-size 100000)
+(setq-default eshell-hist-ignoredups t)
+
+;;;
 ;;; for erlang
 ;;;
 (require 'em-glob)
