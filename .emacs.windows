@@ -25,6 +25,12 @@
 (prefer-coding-system 'utf-8)
 
 ;;;
+;;; for eshell
+;;;
+(setq-default eshell-history-size 100000)
+(setq-default eshell-hist-ignoredups t)
+
+;;;
 ;;; for rust
 ;;;
 (add-hook 'rust-mode-hook #'rust-enable-format-on-save)
