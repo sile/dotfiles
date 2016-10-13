@@ -49,4 +49,4 @@
 ;; helm
 (helm-mode 1)
 (global-set-key (kbd "C-c g") 'helm-ag-project-root)
-(setq helm-ag-base-command "rg --vimgrep --no-heading")
+(setq helm-ag-base-command "rg --vimgrep --no-heading -g !*~")
