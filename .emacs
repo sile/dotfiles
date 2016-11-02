@@ -4,7 +4,7 @@
  '(menu-bar-mode nil)
  '(tool-bar-mode nil))
 
-;;; font
+;;; font (See "https://myrica.estable.jp/" for Myrica)
 (let* ((size 14)
        (asciifont "Myrica M") ; ASCII fonts
        (jpfont "Myrica M") ; Japanese fonts
