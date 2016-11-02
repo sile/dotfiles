@@ -50,3 +50,7 @@
 (helm-mode 1)
 (global-set-key (kbd "C-c g") 'helm-ag-project-root)
 (setq helm-ag-base-command "rg --vimgrep --no-heading -g !*~")
+
+;; company
+(global-company-mode)
+(add-to-list 'company-backends '(company-dabbrev-code))
