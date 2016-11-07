@@ -66,4 +66,3 @@
 
 ;; company
 (global-company-mode)
-(add-to-list 'company-backends '(company-dabbrev-code))
