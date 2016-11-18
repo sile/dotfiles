@@ -38,6 +38,19 @@
 (setq-default eshell-history-size 100000)
 (setq-default eshell-hist-ignoredups t)
 
+(add-hook
+ 'eshell-mode-hook
+ '(lambda ()
+    (require 'em-glob)
+    (let ((lib-pathes
+           (apply
+            'concat
+            (mapcar (lambda (p) (concat path-separator p))
+                    (eshell-extended-glob
+                     (concat (getenv "HOME") "dev/lib/*/bin"))))))
+      (setq eshell-path-env (concat eshell-path-env lib-pathes)))
+    ))
+
 ;;;
 ;;; for rust
 ;;;
