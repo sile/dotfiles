@@ -35,4 +35,4 @@ rustup update
 cargo install rustfmt
 cargo install racer
 cargo install ripgrep
-cargo install cargo-script
+cargo install evalrs
