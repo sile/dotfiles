@@ -14,7 +14,8 @@
   (set-face-attribute 'default nil :family asciifont :height h)
   (set-fontset-font nil 'japanese-jisx0213.2004-1 jp-fontspec)
   (set-fontset-font nil 'japanese-jisx0213-2 jp-fontspec)
-  (set-fontset-font nil 'katakana-jisx0201 jp-fontspec)
+
+      (set-fontset-font nil 'katakana-jisx0201 jp-fontspec)
   (set-fontset-font nil '(#x0080 . #x024F) fontspec)
   (set-fontset-font nil '(#x0370 . #x03FF) fontspec))
 
@@ -23,7 +24,8 @@
     (set-background-color "Black")
     (set-foreground-color "LightGray")
     (set-cursor-color "Gray")
-    (set-frame-parameter nil 'alpha 80)
+
+                   (set-frame-parameter nil 'alpha 80)
     ))
 
 ;;; common
@@ -79,3 +81,12 @@
 
 ;; company
 (global-company-mode)
+
+;; quickrun
+(quickrun-add-command
+ "evalrs"
+ '((:command . "evalrs")
+   (:exec . ("cat %s | %c %a")))
+ :default "evalrs")
+
+(setq-default quickrun-timeout-seconds 120)
