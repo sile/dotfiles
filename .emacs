@@ -19,7 +19,7 @@
   (set-fontset-font nil '(#x0080 . #x024F) fontspec)
   (set-fontset-font nil '(#x0370 . #x03FF) fontspec))
 
-;;; windoow
+;;; window
 (if window-system (progn
     (set-background-color "Black")
     (set-foreground-color "LightGray")
