@@ -82,10 +82,12 @@
 (global-company-mode)
 
 ;; quickrun
-(quickrun-add-command
- "evalrs"
- '((:command . "evalrs")
-   (:exec . ("cat %s | %c %a")))
- :default "evalrs")
-
 (setq-default quickrun-timeout-seconds 120)
+
+(global-set-key
+ (kbd "C-c C-c C-q")
+ '(lambda ()
+    (interactive)
+    (quickrun :source
+              '((:command . "evalrs")
+                (:exec . ("cat %s | %c %a"))))))
