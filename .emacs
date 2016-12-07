@@ -55,7 +55,7 @@
 ;;;
 ;;; for rust
 ;;;
-(add-hook 'rust-mode-hook #'rust-enable-format-on-save)
+(add-hook 'rust-mode-hook #'rustfmt-enable-on-save)
 (add-hook 'rust-mode-hook #'cargo-minor-mode)
 (add-hook 'rust-mode-hook #'racer-mode)
 
@@ -88,7 +88,7 @@
  (kbd "C-c C-c C-q")
  '(lambda ()
     (interactive)
-    (rust-format-buffer)
+    (rustfmt-format-buffer)
     (quickrun :source
               '((:command . "evalrs")
                 (:exec . ("cat %s | %c %a"))))))
