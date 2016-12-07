@@ -15,7 +15,6 @@
 (package-install 'cargo)
 (package-install 'toml-mode)
 (package-install 'racer)
-(package-install 'rustfmt)
 (package-install 'company-racer)
 
 ;; helm
