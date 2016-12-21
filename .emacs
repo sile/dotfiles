@@ -88,7 +88,6 @@
  (kbd "C-c C-c C-q")
  '(lambda ()
     (interactive)
-    (rust-format-buffer)
     (quickrun :source
               '((:command . "evalrs")
                 (:exec . ("cat %s | %c %a"))))))
