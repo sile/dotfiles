@@ -36,3 +36,4 @@ cargo install rustfmt
 cargo install racer
 cargo install ripgrep
 cargo install evalrs
+cargo install cargo-update
