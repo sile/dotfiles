@@ -5,7 +5,7 @@ set -eu
 ##
 ## Basic
 ##
-sudo apt install emacs-nox git tmux gcc make
+sudo apt install emacs-nox git tmux gcc make fish
 
 ##
 ## Rust
