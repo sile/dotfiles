@@ -32,6 +32,10 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (prefer-coding-system 'utf-8)
 
+;;; misc
+(defun win-open (path)
+  (w32-shell-execute "open" path))
+
 ;;;
 ;;; for eshell
 ;;;
