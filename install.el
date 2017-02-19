@@ -22,7 +22,6 @@
 (package-install 'helm-git-grep)
 (package-install 'helm-ls-git)
 (package-install 'helm-ag)
-(package-install 'helm-swoop)
 
 ;; quickrun
 (package-install 'quickrun)
