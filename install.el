@@ -28,3 +28,6 @@
 
 ;; erlang
 (package-install 'erlang)
+
+;; fish
+(package-install 'fish-mode)
