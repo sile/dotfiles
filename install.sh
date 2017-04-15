@@ -1,11 +1,11 @@
-#! /bin/bash
+ #! /bin/bash
 
 set -eu
 
 ##
 ## Basic
 ##
-sudo apt install emacs-nox git tmux gcc make fish
+sudo apt install emacs-nox git tmux gcc make fish curl
 
 ##
 ## Rust
