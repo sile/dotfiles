@@ -17,6 +17,7 @@ then
 fi
 
 rustup update
+rustup component add rust-src
 cargo install rustfmt
 cargo install racer
 cargo install ripgrep
