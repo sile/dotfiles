@@ -22,7 +22,7 @@
 
     (set-background-color "Black")
     (set-foreground-color "LightGray")
-    (set-cursor-color "Gray")
+`    (set-cursor-color "Gray")
     (set-frame-parameter nil 'alpha 80)
     ))
 
@@ -71,7 +71,7 @@
 
 (setq racer-rust-src-path
       (concat (file-name-as-directory (getenv "HOME")) 
-              "~/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"))
+              ".multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"))
 (setq compilation-ask-about-save nil)
 
 ;; git-gutter
