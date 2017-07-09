@@ -23,3 +23,4 @@ cargo install racer
 cargo install ripgrep
 cargo install evalrs
 cargo install cargo-update
+cargo install cargo-kcov
