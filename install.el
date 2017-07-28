@@ -1,3 +1,4 @@
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
@@ -31,3 +32,6 @@
 
 ;; fish
 (package-install 'fish-mode)
+
+;; others
+(package-install 'google-translate)
