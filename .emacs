@@ -96,3 +96,8 @@
     (quickrun :source
               '((:command . "evalrs")
                 (:exec . ("cat %s | %c %a"))))))
+
+;; google-translate
+(global-set-key "\C-ct" 'google-translate-smooth-translate)
+(setq google-translate-translation-directions-alist
+      '(("en" . "ja") ("ja" . "en")))
