@@ -98,6 +98,6 @@
                 (:exec . ("cat %s | %c %a"))))))
 
 ;; google-translate
-(global-set-key "\C-ct" 'google-translate-smooth-translate)
+(global-set-key "\C-cr" 'google-translate-smooth-translate)
 (setq google-translate-translation-directions-alist
       '(("en" . "ja") ("ja" . "en")))
