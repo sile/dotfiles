@@ -24,3 +24,4 @@ cargo install ripgrep
 cargo install evalrs
 cargo install cargo-update
 cargo install cargo-kcov
+cargo install tokei
