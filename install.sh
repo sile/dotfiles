@@ -1,4 +1,4 @@
- #! /bin/bash
+#! /bin/bash
 
 set -eu
 
@@ -25,3 +25,4 @@ cargo install evalrs
 cargo install cargo-update
 cargo install cargo-kcov
 cargo install tokei
+cargo +nightly install clippy
