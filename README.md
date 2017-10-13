@@ -24,3 +24,5 @@ X Window System:
   - Install `Xming-*-setup.exe` and `Xming-fonts-*-setup.exe`
   - Set the value of environment variable `DISPLAY` to `localhost:0.0`
 
+Mintty for BoW:
+- https://github.com/mintty/wsltty
