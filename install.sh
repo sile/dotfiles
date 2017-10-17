@@ -5,7 +5,7 @@ set -eu
 ##
 ## Basic
 ##
-sudo apt install emacs-nox git tmux gcc make fish curl
+sudo apt install emacs-nox git tmux gcc make fish curl cmake pkg-config libssl-dev
 
 ##
 ## Rust
@@ -18,11 +18,6 @@ fi
 
 rustup update
 rustup component add rust-src
-cargo install rustfmt
-cargo install racer
-cargo install ripgrep
-cargo install evalrs
-cargo install cargo-update
-cargo install cargo-kcov
-cargo install tokei
+rustup install nightly
+cargo install rustfmt racer ripgrep evalrs cargo-update cargo-kcov tokei
 cargo +nightly install clippy
