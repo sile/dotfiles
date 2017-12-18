@@ -9,3 +9,5 @@ end
 if not ssh-add -l > /dev/null
         ssh-add
 end
+
+set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
