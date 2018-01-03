@@ -19,5 +19,5 @@ fi
 rustup update
 rustup component add rust-src
 rustup install nightly
-cargo install rustfmt racer ripgrep evalrs cargo-update cargo-kcov tokei
+cargo install rustfmt racer ripgrep evalrs cargo-update cargo-kcov cargo-outdated tokei
 cargo +nightly install clippy
