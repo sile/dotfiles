@@ -16,3 +16,6 @@ then
     echo "# My .bashrc" >> $HOME/.bashrc
     echo ". $MY_BASHRC_PATH" >> $HOME/.bashrc
 fi
+
+mkdir -p ~/.config/fish/
+cp .config.fish ~/.config/fish/config.fish
