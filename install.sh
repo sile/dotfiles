@@ -18,6 +18,7 @@ fi
 
 rustup update
 rustup component add rust-src
+rustup component add rustfmt-preview
 rustup install nightly
 cargo install racer ripgrep evalrs cargo-update cargo-kcov cargo-outdated tokei hb
-cargo +nightly install clippy rustfmt-nightly
+cargo +nightly install clippy
