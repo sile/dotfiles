@@ -1,5 +1,5 @@
 touch ~/.ssh-agent-info
-source ~/.ssh-agent-info
+source ~/.ssh-agent-info > /dev/null
 ssh-add -l > /dev/null
 if [ $status = 2 ]
         ssh-agent -c > ~/.ssh-agent-info
