@@ -19,6 +19,7 @@ fi
 rustup update
 rustup install nightly
 rustup component add rust-src
-# rustup component add rustfmt-preview
+rustup component add rustfmt-preview
 rustup component add clippy-preview --toolchain=nightly
-cargo install racer ripgrep evalrs cargo-update cargo-kcov cargo-outdated cargo-tree tokei hb rofis bat
+cargo install ripgrep evalrs cargo-update cargo-kcov cargo-outdated cargo-tree tokei hb rofis bat
+cargo +nightly install racer
