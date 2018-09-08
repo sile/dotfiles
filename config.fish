@@ -11,3 +11,7 @@ if not ssh-add -l > /dev/null
 end
 
 set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
+
+if not ps aux | grep rofis | grep -v grep > /dev/null
+        cd $HOME/dev; and rofis -d
+end
