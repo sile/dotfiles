@@ -77,7 +77,6 @@
               ".multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"))
 (setq compilation-ask-about-save nil)
 (setq cargo-process--command-bench "+nightly bench")
-(setq cargo-process--command-clippy "+nightly clippy")
 (setq cargo-process--command-test "test --all-features")
 (setq cargo-process--command-doc "doc --all-features")
 ;; (setq cargo-process--command-build "+nightly build --target=wasm32-unknown-unknown")
