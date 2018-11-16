@@ -1,3 +1,5 @@
+set -U fish_user_paths $HOME/.cargo/bin $HOME/.local/bin
+
 touch ~/.ssh-agent-info
 source ~/.ssh-agent-info > /dev/null
 ssh-add -l > /dev/null
