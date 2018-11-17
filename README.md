@@ -11,15 +11,3 @@ $ ./install.sh
 $ emacs --script install.el
 $ ./setup.sh
 ```
-
-References
-----------
-
-Docker (Windows):
-- [Installing Docker on Ubuntu Bash for Windows](http://www.altis.com.au/installing-docker-on-ubuntu-bash-for-windows/)
-- [Running Docker containers on Bash on Windows](https://blog.jayway.com/2017/04/19/running-docker-on-bash-on-windows/)
-
-X Window System:
-- https://ja.osdn.net/projects/sfnet_xming/:
-  - Install `Xming-*-setup.exe` and `Xming-fonts-*-setup.exe`
-  - Set the value of environment variable `DISPLAY` to `localhost:0.0`
