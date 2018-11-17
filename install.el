@@ -32,5 +32,9 @@
 ;; fish
 (package-install 'fish-mode)
 
+;; python
+(package-install 'company-jedi)
+(jedi:install-server)
+
 ;; others
 (package-install 'google-translate)
