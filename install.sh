@@ -23,3 +23,12 @@ rustup component add rustfmt-preview
 rustup component add clippy-preview
 cargo install ripgrep evalrs cargo-update cargo-kcov cargo-outdated cargo-readme tokei hb rofis evcxr_repl
 cargo +nightly install racer
+
+##
+## Python
+##
+sudo apt install python3 python3-pip
+pip3 install pip --upgrade --user
+sudo apt remove python3-pip
+pip3 install jedi --user
+pip3 install virtualenv --uesr
