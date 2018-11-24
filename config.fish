@@ -17,3 +17,9 @@ set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysro
 if not ps aux | grep rofis | grep -v grep > /dev/null
         cd $HOME/dev; and rofis -d
 end
+
+if [ "$TMUX" = "" ]
+    if not tmux attach
+        tmux
+    end
+end
