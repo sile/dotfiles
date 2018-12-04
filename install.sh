@@ -33,12 +33,3 @@ sudo apt remove python3-pip
 pip3 install jedi --user
 pip3 install virtualenv --uesr
 
-;; python
-(require 'python)
-(defun python-shell-parse-command () "python3 -i")
-
-(require 'jedi-core)
-(setq jedi:complete-on-dot t)
-(setq jedi:use-shortcuts t)
-(add-hook 'python-mode-hook 'jedi:setup)
-(add-hook 'python-mode-hook (lambda () (add-to-list 'company-backends 'company-jedi)))
