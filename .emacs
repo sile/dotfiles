@@ -110,3 +110,13 @@
 (global-set-key "\C-ct" 'google-translate-smooth-translate)
 (setq google-translate-translation-directions-alist
       '(("en" . "ja") ("ja" . "en")))
+
+;; python
+(require 'python)
+(defun python-shell-parse-command () "python3 -i")
+
+(require 'jedi-core)
+(setq jedi:complete-on-dot t)
+(setq jedi:use-shortcuts t)
+(add-hook 'python-mode-hook 'jedi:setup)
+(add-hook 'python-mode-hook (lambda () (add-to-list 'company-backends 'company-jedi)))
