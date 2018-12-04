@@ -33,6 +33,7 @@
 (package-install 'fish-mode)
 
 ;; python
+(package-install 'jedi-core)
 (package-install 'company-jedi)
 (jedi:install-server)
 
