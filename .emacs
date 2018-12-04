@@ -73,11 +73,11 @@
 (setq company-tooltip-align-annotations t)
 
 (setq racer-rust-src-path
-      (concat (file-name-as-directory (getenv "HOME")) 
+      (concat (file-name-as-directory (getenv "HOME"))
               ".multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"))
 (setq compilation-ask-about-save nil)
 (setq cargo-process--command-bench "+nightly bench")
-(setq cargo-process--command-clippy "clippy --all-features") 
+(setq cargo-process--command-clippy "clippy --all-features")
 (setq cargo-process--command-test "test --all-features")
 (setq cargo-process--command-doc "doc --all-features")
 ;; (setq cargo-process--command-build "+nightly build --target=wasm32-unknown-unknown")
@@ -118,5 +118,8 @@
 (require 'jedi-core)
 (setq jedi:complete-on-dot t)
 (setq jedi:use-shortcuts t)
+(setq jedi:environment-virtualenv
+      (append python-environment-virtualenv
+              '("--python" "/usr/bin/python3")))
 (add-hook 'python-mode-hook 'jedi:setup)
 (add-hook 'python-mode-hook (lambda () (add-to-list 'company-backends 'company-jedi)))
