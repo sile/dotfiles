@@ -31,5 +31,4 @@ sudo apt install python3 python3-pip
 pip3 install pip --upgrade --user
 sudo apt remove python3-pip
 pip3 install jedi --user
-pip3 install virtualenv --uesr
-
+pip3 install virtualenv --user
