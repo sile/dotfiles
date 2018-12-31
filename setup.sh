@@ -10,4 +10,4 @@ do
 done
 
 mkdir -p ~/.config/fish/
-cp config.fish ~/.config/fish/config.fish
+ln -fns config.fish ~/.config/fish/config.fish
