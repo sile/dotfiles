@@ -5,7 +5,7 @@ matrix:
   - name: "stable"
     rust: stable
     sudo: required
-    before_script: rustup component add clippy-preview
+    before_script: rustup component add clippy
     script:
       - cargo test --all-features --all
       - cargo clippy --all-features --all
@@ -47,7 +47,7 @@ matrix:
 
   - name: "beta clippy"
     rust: beta
-    before_script: rustup component add clippy-preview
+    before_script: rustup component add clippy
     script: cargo clippy --all-features --all
     env: RUSTFLAGS="-D warnings"
 
@@ -62,7 +62,7 @@ matrix:
 
   - name: "nightly clippy"
     rust: nightly
-    before_script: rustup component add clippy-preview
+    before_script: rustup component add clippy
     script: cargo clippy --all-features --all
     env: RUSTFLAGS="-D warnings"
 
