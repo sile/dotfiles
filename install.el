@@ -23,9 +23,6 @@
 (package-install 'helm-ls-git)
 (package-install 'helm-ag)
 
-;; quickrun
-(package-install 'quickrun)
-
 ;; erlang
 (package-install 'erlang)
 
