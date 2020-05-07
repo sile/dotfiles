@@ -33,6 +33,7 @@
 (package-install 'python-black)
 (package-install 'jedi-core)
 (package-install 'company-jedi)
+(package-install 'pytest)
 (jedi:install-server)
 
 ;; others
