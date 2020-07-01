@@ -21,6 +21,7 @@ rustup install nightly
 rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
+rustup +nightly component add miri
 cargo install ripgrep evalrs cargo-update cargo-kcov cargo-outdated cargo-readme tokei hb rofis evcxr_repl
 cargo +nightly install racer
 
