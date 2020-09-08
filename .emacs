@@ -66,6 +66,5 @@
 (add-hook 'python-mode-hook (lambda () (add-to-list 'company-backends 'company-jedi)))
 
 (require 'python-black)
-(set 'python-black-extra-args '("--line-length" "99" "--exclude" "docs"))
 (add-hook 'python-mode-hook 'python-black-on-save-mode)
 
