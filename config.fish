@@ -15,7 +15,7 @@ end
 set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
 # set -x DISPLAY localhost:0.0  # for WSL1
 set -x DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0  # for WSL2
-set -x DOCKER_HOST tcp://localhost:2375
+# set -x DOCKER_HOST tcp://localhost:2375 # for WSL1
 
 if not ps aux | grep rofis | grep -v grep > /dev/null
         cd $HOME/dev; and rofis -d
