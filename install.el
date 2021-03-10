@@ -35,6 +35,3 @@
 (package-install 'company-jedi)
 (package-install 'pytest)
 (jedi:install-server)
-
-;; others
-(package-install 'google-translate)
