@@ -47,11 +47,6 @@
 ;; company
 (global-company-mode)
 
-;; google-translate
-(global-set-key "\C-ct" 'google-translate-smooth-translate)
-(setq google-translate-translation-directions-alist
-      '(("en" . "ja") ("ja" . "en")))
-
 ;; python
 (require 'python)
 (defun python-shell-parse-command () "python3 -i")
