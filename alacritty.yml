@@ -1,5 +1,5 @@
 shell:
-  program: pengwin
+  program: "wsl -d WLinux cd ~; $SHELL - -login"
 
 font:
   normal:
