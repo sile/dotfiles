@@ -16,6 +16,8 @@
 (package-install 'toml-mode)
 (package-install 'racer)
 (package-install 'company-racer)
+(package-install 'lsp-mode)
+(package-install 'lsp-ui)
 
 ;; helm
 (package-install 'helm)
