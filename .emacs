@@ -10,25 +10,29 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (prefer-coding-system 'utf-8)
 
+(eval-when-compile
+  (require 'use-package))
+
 ;;;
 ;;; for rust
 ;;;
+(setq rust-format-on-save t)
 (add-hook 'rust-mode-hook #'rust-enable-format-on-save)
 (add-hook 'rust-mode-hook #'cargo-minor-mode)
-(add-hook 'rust-mode-hook #'racer-mode)
 
-(add-hook 'racer-mode-hook #'company-mode)
-(add-hook 'racer-mode-hook
-          (lambda ()
-            (setq-local eldoc-documentation-function #'ignore)))
+(use-package lsp-mode
+             :ensure t
+             :hook (rust-mode . lsp)
+             :bind ("C-c h" . lsp-describe-thing-at-point)
+             :custom (lsp-rust-server 'rust-analyzer))
+
+(use-package lsp-ui
+  :ensure t)
 
 (add-hook 'rust-mode-hook '(lambda ()
                              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (setq company-tooltip-align-annotations t)
 
-(setq racer-rust-src-path
-      (concat (file-name-as-directory (getenv "HOME"))
-              ".multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"))
 (setq compilation-ask-about-save nil)
 (setq cargo-process--command-bench "+nightly bench")
 (setq cargo-process--command-clippy "clippy --all-features")
