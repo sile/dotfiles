@@ -29,8 +29,6 @@
 (use-package lsp-ui
   :ensure t)
 
-(setq lsp-ui-sideline-enable t)
-
 (add-hook 'rust-mode-hook '(lambda ()
                              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (setq company-tooltip-align-annotations t)
