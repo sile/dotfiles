@@ -14,10 +14,6 @@
 (package-install 'rust-mode)
 (package-install 'cargo)
 (package-install 'toml-mode)
-(package-install 'racer)
-(package-install 'company-racer)
-(package-install 'lsp-mode)
-(package-install 'lsp-ui)
 
 ;; helm
 (package-install 'helm)
@@ -40,3 +36,7 @@
 
 ;; emacs
 (package-install 'use-package)
+
+;; lsp
+(package-install 'lsp-mode)
+(package-install 'lsp-ui)
