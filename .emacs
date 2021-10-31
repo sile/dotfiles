@@ -29,6 +29,8 @@
 (use-package lsp-ui
   :ensure t)
 
+(setq lsp-ui-sideline-enable t)
+
 (add-hook 'rust-mode-hook '(lambda ()
                              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (setq company-tooltip-align-annotations t)
@@ -67,3 +69,5 @@
 (require 'python-black)
 (add-hook 'python-mode-hook 'python-black-on-save-mode)
 
++;; erlang
+(add-hook 'erlang-mode-hook #'lsp)
