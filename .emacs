@@ -67,5 +67,9 @@
 (require 'python-black)
 (add-hook 'python-mode-hook 'python-black-on-save-mode)
 
-+;; erlang
+;; erlang
 (add-hook 'erlang-mode-hook #'lsp)
+
+;; lsp
+;; see: https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
+(setq lsp-headerline-breadcrumb-enable nil)
