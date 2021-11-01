@@ -2,6 +2,8 @@
 
 set -eu
 
+sudo apt update
+
 ##
 ## Basic
 ##
@@ -25,14 +27,5 @@ rustup component add rls
 rustup component add rust-analysis
 rustup +nightly component add miri
 cargo install ripgrep evalrs cargo-update cargo-kcov cargo-outdated tokei rofis evcxr_repl du-dust
-
-##
-## Python
-##
-sudo apt install python3 python3-pip
-pip3 install pip --upgrade --user
-sudo apt remove python3-pip
-pip3 install jedi --user
-pip3 install virtualenv --user
 
 # TODO: install gh and erlang_ls
