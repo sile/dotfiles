@@ -15,8 +15,7 @@ $ ./setup.sh
 keymap (windows)
 -----------------
 
-- [sharpkeys](https://github.com/randyrants/sharpkeys)
-- [windows-keymap.skl](./windows-keymap.skl)
+Use [PowerToys](https://github.com/microsoft/PowerToys)
 
 font
 ----
