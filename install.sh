@@ -26,7 +26,7 @@ rustup component add clippy
 rustup component add rls
 rustup component add rust-analysis
 rustup +nightly component add miri
-cargo install ripgrep evalrs cargo-update cargo-kcov cargo-outdated tokei rofis evcxr_repl du-dust
+cargo install ripgrep evalrs cargo-update cargo-kcov cargo-outdated tokei rofis evcxr_repl du-dust bat
 
 ##
 ## GitHub CLI
