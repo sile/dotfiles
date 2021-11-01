@@ -1,3 +1,11 @@
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+(eval-when-compile
+   (require 'use-package))
+(setq use-package-always-ensure t)
+
 ;;; editor config
 (custom-set-variables
  '(inhibit-startup-screen t)
@@ -9,9 +17,6 @@
 (keyboard-translate ?\C-h ?\C-?)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (prefer-coding-system 'utf-8)
-
-(eval-when-compile
-  (require 'use-package))
 
 ;;;
 ;;; for rust
@@ -39,7 +44,6 @@
 (setq cargo-process--command-doc "doc --all-features")
 
 ;; git-gutter
-(package-initialize)
 (global-git-gutter-mode t)
 
 ;; helm
