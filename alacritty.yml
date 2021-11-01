@@ -1,5 +1,5 @@
 shell:
-  program: "wsl -d WLinux cd ~; $SHELL - -login"
+  program: "wsl cd ~; $SHELL - -login"
 
 font:
   normal:
