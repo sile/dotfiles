@@ -51,22 +51,6 @@
 ;; company
 (global-company-mode)
 
-;; python
-(require 'python)
-(defun python-shell-parse-command () "python3 -i")
-
-(require 'jedi-core)
-(setq jedi:complete-on-dot t)
-(setq jedi:use-shortcuts t)
-(setq jedi:environment-virtualenv
-      (append python-environment-virtualenv
-              '("--python" "/usr/bin/python3")))
-(add-hook 'python-mode-hook 'jedi:setup)
-(add-hook 'python-mode-hook (lambda () (add-to-list 'company-backends 'company-jedi)))
-
-(require 'python-black)
-(add-hook 'python-mode-hook 'python-black-on-save-mode)
-
 ;; erlang
 (add-hook 'erlang-mode-hook #'lsp)
 
