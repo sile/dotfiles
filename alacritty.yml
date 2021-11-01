@@ -1,5 +1,5 @@
 shell:
-  program: "wsl cd ~; $SHELL - -login"
+  program: /Windows/System32/wsl.exe ~ fish
 
 font:
   normal:
