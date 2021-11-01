@@ -28,4 +28,9 @@ rustup component add rust-analysis
 rustup +nightly component add miri
 cargo install ripgrep evalrs cargo-update cargo-kcov cargo-outdated tokei rofis evcxr_repl du-dust
 
-# TODO: install gh and erlang_ls
+##
+## GitHub CLI
+##
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository -u https://cli.github.com/packages
+sudo apt install gh
