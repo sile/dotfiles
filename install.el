@@ -27,13 +27,6 @@
 ;; fish
 (package-install 'fish-mode)
 
-;; python
-(package-install 'python-black)
-(package-install 'jedi-core)
-(package-install 'company-jedi)
-(package-install 'pytest)
-(jedi:install-server)
-
 ;; emacs
 (package-install 'use-package)
 
