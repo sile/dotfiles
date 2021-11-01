@@ -16,7 +16,6 @@
 ;;;
 ;;; for rust
 ;;;
-(setq rust-format-on-save t)
 (add-hook 'rust-mode-hook #'rust-enable-format-on-save)
 (add-hook 'rust-mode-hook #'cargo-minor-mode)
 
