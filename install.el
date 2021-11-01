@@ -13,7 +13,6 @@
 ;; rust
 (package-install 'rust-mode)
 (package-install 'cargo)
-(package-install 'toml-mode)
 
 ;; helm
 (package-install 'helm)
@@ -33,3 +32,7 @@
 ;; lsp
 (package-install 'lsp-mode)
 (package-install 'lsp-ui)
+
+;; TOML/YAML
+(package-install 'toml-mode)
+(package-install 'yaml-mode)
