@@ -17,7 +17,3 @@ keymap (windows)
 
 Use [PowerToys](https://github.com/microsoft/PowerToys)
 
-font
-----
-
-- Cascadia Code
