@@ -20,4 +20,4 @@ Use [PowerToys](https://github.com/microsoft/PowerToys)
 font
 ----
 
-- [Myrica](https://myrica.estable.jp/)
+- Cascadia Code
