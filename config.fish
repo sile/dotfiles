@@ -13,7 +13,7 @@ if not ssh-add -l > /dev/null
 end
 
 set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
-set -x DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0  # for WSL2
+set -x DISPLAY :0  # for WSLg
 
 if not ps aux | grep rofis | grep -v grep > /dev/null
         pushd $HOME/dev
