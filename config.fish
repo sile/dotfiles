@@ -29,3 +29,10 @@ end
 
 # Erlang
 set -x ERL_AFLAGS "+pc unicode -kernel shell_history enabled"
+
+# Chrome
+function chrome --description "chrome <filepath>"
+    if test (count $argv) -eq 1
+        /mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe (wslpath -w $argv[1])
+    end
+end
