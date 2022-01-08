@@ -15,12 +15,6 @@ end
 set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
 set -x DISPLAY :0  # for WSLg
 
-if not ps aux | grep rofis | grep -v grep > /dev/null
-        pushd $HOME/dev
-        rofis -d
-        popd
-end
-
 if [ "$TMUX" = "" ]
     if not tmux attach
         tmux
