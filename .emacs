@@ -30,9 +30,6 @@
              :bind ("C-c h" . lsp-describe-thing-at-point)
              :custom (lsp-rust-server 'rust-analyzer))
 
-(use-package lsp-ui
-  :ensure t)
-
 (add-hook 'rust-mode-hook '(lambda ()
                              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (setq company-tooltip-align-annotations t)
@@ -60,3 +57,9 @@
 ;; lsp
 ;; see: https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
 (setq lsp-headerline-breadcrumb-enable nil)
+
+(use-package lsp-ui
+  :ensure t)
+
+(use-package lsp-treemacs
+  :ensure t)
