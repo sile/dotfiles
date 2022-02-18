@@ -32,6 +32,7 @@
 ;; lsp
 (package-install 'lsp-mode)
 (package-install 'lsp-ui)
+(package-install 'lsp-treemacs)
 
 ;; TOML/YAML
 (package-install 'toml-mode)
