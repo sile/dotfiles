@@ -37,3 +37,7 @@
 ;; TOML/YAML
 (package-install 'toml-mode)
 (package-install 'yaml-mode)
+
+;; formatter
+(package-install 'format-all)
+
