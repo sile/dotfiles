@@ -28,7 +28,8 @@
              :ensure t
              :hook (rust-mode . lsp)
              :bind ("C-c h" . lsp-describe-thing-at-point)
-             :custom (lsp-rust-server 'rust-analyzer))
+             :custom (lsp-rust-server 'rust-analyzer)
+                     (lsp-rust-all-features t))
 
 (add-hook 'rust-mode-hook '(lambda ()
                              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
