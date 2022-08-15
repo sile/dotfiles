@@ -65,15 +65,5 @@
 (use-package lsp-treemacs
   :ensure t)
 
-;;                                                                                                                                                                                                                                                                                
-;; Formatter                                                                                                                                                                                                                                                                      
-;;                                                                                                                                                                                                                                                                                
-
-;; See: https://github.com/lassik/emacs-format-all-the-code/issues/173                                                                                                                                                                                                            
-(defun -format-all-buffer ()
-  "format-all-buffer without jumps of cursor"
-  (interactive)
-  (let ((point (point)) (wstart (window-start)))
-    (format-all-buffer)
-    (goto-char point)
-    (set-window-start (selected-window) wstart)))
+;; icomplete
+(icomplete-vertical-mode)
