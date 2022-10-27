@@ -17,6 +17,7 @@
 (keyboard-translate ?\C-h ?\C-?)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (prefer-coding-system 'utf-8)
+(setq visible-bell t)
 
 ;;;
 ;;; for rust
