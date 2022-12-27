@@ -32,8 +32,8 @@
              :custom (lsp-rust-server 'rust-analyzer)
                      (lsp-rust-all-features t))
 
-(add-hook 'rust-mode-hook '(lambda ()
-                             (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
+(add-hook 'rust-mode-hook #'(lambda ()
+                              (local-set-key (kbd "TAB") #'company-indent-or-complete-common)))
 (setq company-tooltip-align-annotations t)
 
 (setq compilation-ask-about-save nil)
