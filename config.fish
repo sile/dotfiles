@@ -4,12 +4,12 @@ touch ~/.ssh-agent-info
 source ~/.ssh-agent-info > /dev/null
 ssh-add -l > /dev/null
 if [ $status = 2 ]
-        ssh-agent -c > ~/.ssh-agent-info
-        source ~/.ssh-agent-info
+    ssh-agent -c > ~/.ssh-agent-info
+    source ~/.ssh-agent-info
 end
 
 if not ssh-add -l > /dev/null
-        ssh-add
+    ssh-add
 end
 
 set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
@@ -24,9 +24,7 @@ end
 # Erlang
 set -x ERL_AFLAGS "+pc unicode -kernel shell_history enabled"
 
-# Chrome
-function chrome --description "chrome <filepath>"
-    if test (count $argv) -eq 1
-        /mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe (wslpath -w $argv[1])
-    end
+# HTTP server
+if ! ps aux | grep rofis | grep -v grep > /dev/null
+    rofis -d -r $HOME
 end
