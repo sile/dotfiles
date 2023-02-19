@@ -37,7 +37,7 @@
 (setq company-tooltip-align-annotations t)
 
 (setq compilation-ask-about-save nil)
-(setq cargo-process--command-bench "+nightly bench")
+(setq cargo-process--command-bench "build --release --target wasm32-unknown-unknown")
 (setq cargo-process--command-clippy "clippy --all-features")
 (setq cargo-process--command-test "test --all-features")
 (setq cargo-process--command-doc "doc --all-features")
@@ -46,7 +46,6 @@
 (global-git-gutter-mode t)
 
 ;; helm
-(helm-mode 1)
 (global-set-key (kbd "C-c g") 'helm-ag-project-root)
 (setq helm-ag-base-command "rg --vimgrep --no-heading -g !*~")
 
