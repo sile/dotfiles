@@ -28,6 +28,7 @@
 
 ;; emacs
 (package-install 'use-package)
+(package-install 'company)
 
 ;; lsp
 (package-install 'lsp-mode)
@@ -40,4 +41,3 @@
 
 ;; formatter
 (package-install 'format-all)
-
