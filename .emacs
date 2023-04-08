@@ -29,6 +29,7 @@
              :ensure t
              :hook (rust-mode . lsp)
              :bind ("C-c h" . lsp-describe-thing-at-point)
+             :bind-keymap ("C-c C-l" . lsp-command-map)
              :custom (lsp-rust-server 'rust-analyzer)
                      (lsp-rust-all-features t))
 
