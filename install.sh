@@ -25,7 +25,7 @@ rustup component add rustfmt
 rustup component add clippy
 rustup component add rls
 rustup component add rust-analysis
-cargo install ripgrep evalrs cargo-update cargo-outdated tokei du-dust fd-find rofis
+cargo install ripgrep evalrs cargo-update cargo-outdated tokei du-dust fd-find rofis daberu
 
 ##
 ## GitHub CLI
