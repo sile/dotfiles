@@ -13,7 +13,6 @@ if not ssh-add -l > /dev/null
 end
 
 set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
-set -x DISPLAY :0  # for WSLg
 set -x EDITOR emacs
 
 if [ "$TMUX" = "" ]
