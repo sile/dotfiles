@@ -16,6 +16,7 @@
 (setq-default indent-tabs-mode nil)
 (keyboard-translate ?\C-h ?\C-?)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'lsp-format-buffer)
 (prefer-coding-system 'utf-8)
 (setq ring-bell-function 'ignore)
 
