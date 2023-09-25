@@ -64,6 +64,10 @@
 (use-package lsp-ui
   :ensure t)
 
+;; flaymake
+(require 'flymake)
+(define-key flymake-mode-map (kbd "M-n") 'flymake-goto-next-error)
+(define-key flymake-mode-map (kbd "M-p") 'flymake-goto-prev-error)
 (use-package lsp-treemacs
   :ensure t)
 
