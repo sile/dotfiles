@@ -75,6 +75,5 @@
 (icomplete-vertical-mode)
 
 ;; flymake
-(require 'flymake)
-(define-key flymake-mode-map (kbd "M-n") 'flymake-goto-next-error)
-(define-key flymake-mode-map (kbd "M-p") 'flymake-goto-prev-error)
+(global-set-key (kbd "M-p") 'flymake-goto-next-error)
+(global-set-key (kbd "M-n") 'flymake-goto-next-error)
