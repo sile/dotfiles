@@ -9,6 +9,9 @@ sudo apt update
 ##
 sudo apt install emacs-nox git tmux gcc make fish curl cmake pkg-config libssl-dev
 
+## For Termux
+# pkg install binutils 
+
 ##
 ## Rust
 ##
