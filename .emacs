@@ -21,6 +21,14 @@
 (setq ring-bell-function 'ignore)
 
 ;;;
+;;; for JSON
+;;;
+(add-hook 'before-save-hook
+          #'(lambda ()
+              (when (derived-mode-p 'js-json-mode)
+                (json-pretty-print-buffer))))
+
+;;;
 ;;; for rust
 ;;;
 (add-hook 'rust-mode-hook #'rust-enable-format-on-save)
