@@ -28,3 +28,6 @@ set -x ERL_AFLAGS "+pc unicode -kernel shell_history enabled"
 if ! ps aux | grep rofis | grep -v grep > /dev/null
     rofis -d -r $HOME
 end
+
+# ChatGPT
+alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
