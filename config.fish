@@ -12,17 +12,7 @@ if not ssh-add -l > /dev/null
     ssh-add
 end
 
-set -x LD_LIBRARY_PATH (rustc --print sysroot)/lib:(rustc +nightly --print sysroot)/lib
 set -x EDITOR emacs
-
-if [ "$TMUX" = "" ]
-    if not tmux attach
-        tmux
-    end
-end
-
-# Erlang
-set -x ERL_AFLAGS "+pc unicode -kernel shell_history enabled"
 
 # HTTP server
 if ! ps aux | grep rofis | grep -v grep > /dev/null
