@@ -28,11 +28,4 @@ rustup component add rustfmt
 rustup component add clippy
 rustup component add rust-analyzer
 rustup component add rust-analysis
-cargo install ripgrep evalrs cargo-update cargo-outdated du-dust fd-find rofis daberu uribo efmt erlls
-
-##
-## GitHub CLI
-##
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-sudo apt-add-repository -u https://cli.github.com/packages
-sudo apt install gh
+cargo install ripgrep evalrs cargo-update cargo-outdated du-dust fd-find rofis daberu uribo efmt erlls uribo
