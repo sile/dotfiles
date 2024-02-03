@@ -21,3 +21,14 @@ end
 
 # ChatGPT
 alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
+
+# Uribo
+set -x URIBO_DEFAULT_CONFIG_PATH "$HOME/.uribo"
+
+function fish_command_not_found
+    if uribo find $argv[1] > /dev/null 2> /dev/null
+        uribo run $argv
+    else
+        __fish_default_command_not_found_handler $argv[1]
+    end
+end
