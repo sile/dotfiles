@@ -37,3 +37,7 @@
 ;; TOML/YAML
 (package-install 'toml-mode)
 (package-install 'yaml-mode)
+
+;; SKK
+(package-install 'ddskk)
+;; (skk-get)
