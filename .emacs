@@ -85,3 +85,7 @@
 ;; flymake
 (global-set-key (kbd "M-p") 'flymake-goto-next-error)
 (global-set-key (kbd "M-n") 'flymake-goto-next-error)
+
+;; ddskk
+(global-set-key (kbd "C-x C-j") 'skk-mode)
+(setq skk-large-jisyo "~/.emacs.d/skk-get-jisyo/SKK-JISYO.L")
