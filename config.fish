@@ -21,6 +21,7 @@ end
 
 # ChatGPT
 alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
+alias refine "daberu --system 'Please refine the code.'"
 
 # Uribo
 set -x URIBO_DEFAULT_CONFIG_PATH "$HOME/.uribo"
