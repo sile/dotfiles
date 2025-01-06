@@ -12,5 +12,12 @@
       "-c",
       "set fish_trace 1; git push origin (git branch --show-current)"
     ]
+  },
+  "co": {
+    "command": "fish",
+    "args": [
+      "-c",
+      "set fish_trace 1; git commit -m $argv[1]"
+    ]
   }
 }
