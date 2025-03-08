@@ -5,7 +5,6 @@
 
 ;; git
 (package-install 'magit)
-(package-install 'git-gutter)
 
 ;; markdown
 (package-install 'markdown-mode)
