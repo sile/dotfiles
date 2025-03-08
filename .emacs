@@ -52,9 +52,6 @@
 (setq cargo-process--command-test "test --all-features")
 (setq cargo-process--command-doc "doc --all-features")
 
-;; git-gutter
-(global-git-gutter-mode t)
-
 ;; helm
 (global-set-key (kbd "C-c g") 'helm-ag-project-root)
 (setq helm-ag-base-command "rg --vimgrep --no-heading -g !*~")
