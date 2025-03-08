@@ -16,5 +16,6 @@ Font
 ----
 
 - https://github.com/yuru7/HackGen
+  - HackGen35Console-Regular.ttf
 
 
