@@ -28,4 +28,4 @@ rustup component add rustfmt
 rustup component add clippy
 rustup component add rust-analyzer
 rustup component add rust-analysis
-cargo install ripgrep evalrs cargo-update cargo-outdated du-dust fd-find rofis daberu efmt erlls uribo
+cargo install evalrs cargo-update cargo-outdated du-dust fd-find rofis daberu uribo mamediff mamegrep

@@ -54,7 +54,6 @@
 
 ;; helm
 (global-set-key (kbd "C-c g") 'helm-ag-project-root)
-(setq helm-ag-base-command "rg --vimgrep --no-heading -g !*~")
 
 ;; company
 (global-company-mode)

@@ -3,9 +3,6 @@
 (package-initialize)
 (package-refresh-contents)
 
-;; git
-(package-install 'magit)
-
 ;; markdown
 (package-install 'markdown-mode)
 
