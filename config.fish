@@ -22,6 +22,8 @@ end
 # ChatGPT
 alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
 alias refine "daberu --system 'Please refine the code.'"
+set -x DABERU_MODEL "claude-3-7-sonnet-latest"
+set -x DABERU_ONESHOT_LOG_PATH "$HOME/tmp/daberu.jsonl"
 
 # Uribo
 set -x URIBO_DEFAULT_CONFIG_PATH "$HOME/.uribo"
