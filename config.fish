@@ -22,6 +22,7 @@ end
 # ChatGPT
 alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
 alias refine "daberu --system 'Please refine the code.'"
+alias fixtodo "daberu --system 'When resolving TODOs, provide the completed code in plain text format without any markdown formatting, code block symbols, or additional commentary surrounding the code. The output should be ready for direct copy-paste into the target source code including sorrounding lines.'"
 set -x DABERU_MODEL "claude-3-7-sonnet-latest"
 set -x DABERU_ONESHOT_LOG_PATH "$HOME/tmp/daberu.jsonl"
 
