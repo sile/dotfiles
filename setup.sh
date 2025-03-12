@@ -2,7 +2,7 @@
 
 set -eu
 
-DOT_FILES=(.emacs .gitconfig .gitignore .tmux.conf .uribo)
+DOT_FILES=(.emacs .gitconfig .gitignore .tmux.conf)
 
 for f in ${DOT_FILES[@]}
 do
