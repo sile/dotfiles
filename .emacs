@@ -52,9 +52,6 @@
 (setq cargo-process--command-test "test --all-features")
 (setq cargo-process--command-doc "doc --all-features")
 
-;; helm
-(global-set-key (kbd "C-c g") 'helm-ag-project-root)
-
 ;; company
 (global-company-mode)
 
