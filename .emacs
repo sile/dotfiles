@@ -12,6 +12,9 @@
  '(menu-bar-mode nil)
  '(tool-bar-mode nil))
 
+;;; For Boox
+; (load-theme 'modus-operandi)
+
 ;;; common
 (setq-default indent-tabs-mode nil)
 (keyboard-translate ?\C-h ?\C-?)
