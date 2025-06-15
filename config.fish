@@ -18,3 +18,9 @@ alias fixtodo "daberu --system 'When resolving TODOs, provide the completed code
 alias autocommit "git commit -m (git diff --cached | daberu --system 'Generate one-line commit message from the git diff result')"
 set -x DABERU_MODEL "claude-sonnet-4-20250514"
 set -x DABERU_LOG_PATH "$HOME/.daberu.jsonl"
+set -x DABERU_SHELL_EXECUTABLE "fish"
+set -x DOKOSA_INDEX_FILE "$HOME/.dokosa"
+
+function doko
+    dokosa search
+end
