@@ -26,5 +26,5 @@ end
 set -x DOKOSA_INDEX_FILE "$HOME/.dokosa"
 
 function doko
-    dokosa search
+    dokosa search $argv
 end
