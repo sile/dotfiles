@@ -22,6 +22,10 @@ function autocommit
     git commit -m (git diff --cached | env DABERU_LOG_PATH='' daberu -s 'Generate one-line commit message from the git diff result')
 end
 
+function fix
+    daberu -s 'Fix TODO' $argv
+end
+
 # dokosa
 set -x DOKOSA_INDEX_FILE "$HOME/.dokosa"
 
