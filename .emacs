@@ -85,3 +85,16 @@
 ;; ddskk
 (global-set-key (kbd "C-x C-j") 'skk-mode)
 (setq skk-large-jisyo "~/.emacs.d/skk-get-jisyo/SKK-JISYO.L")
+
+;; niho
+(defun niho-process-current-line ()
+  (interactive)
+  (save-excursion
+    (beginning-of-line)
+    (let ((start (point)))
+      (end-of-line)
+      (let ((end (point)))
+        (shell-command-on-region start end "niho" t t))))
+  (end-of-line))
+
+(global-set-key (kbd "M-h") 'niho-process-current-line)
