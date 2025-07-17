@@ -28,4 +28,4 @@ rustup component add rustfmt
 rustup component add clippy
 rustup component add rust-analyzer
 rustup component add rust-analysis
-cargo install evalrs fd-find rofis daberu dokosa mamediff mamegrep grepatch
+cargo install evalrs fd-find rofis daberu dokosa mamediff mamegrep grepatch niho

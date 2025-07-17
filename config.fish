@@ -35,3 +35,10 @@ set -x DOKOSA_INDEX_FILE "$HOME/.dokosa"
 function doko
     dokosa search $argv
 end
+
+# niho
+set -x NIHO_DICTIONARY_FILE "$HOME/rust/niho/default-dic.jsonl"
+
+function gendic
+    daberu -s'find <WORD> and generate dic entries for WORD' -e"tail $NIHO_DICTIONARY_FILE" $argv
+end
