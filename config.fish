@@ -1,6 +1,6 @@
 set -U fish_user_paths $HOME/.cargo/bin $HOME/.local/bin
 
-set -x EDITOR emacs
+set -x EDITOR kk
 
 # HTTP server
 if ! ps aux | grep rofis | grep -v grep > /dev/null
