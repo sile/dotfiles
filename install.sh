@@ -7,10 +7,10 @@ sudo apt update
 ##
 ## Basic
 ##
-sudo apt install emacs-nox git tmux gcc make fish curl cmake pkg-config libssl-dev
+sudo apt install git tmux gcc make fish curl cmake pkg-config libssl-dev
 
 ## For Termux
-# pkg install binutils 
+# pkg install binutils moreutils
 
 ##
 ## Rust
@@ -23,9 +23,6 @@ fi
 
 rustup update
 rustup install nightly
-rustup component add rust-src
 rustup component add rustfmt
 rustup component add clippy
-rustup component add rust-analyzer
-rustup component add rust-analysis
-cargo install evalrs fd-find rofis daberu dokosa mamediff mamegrep grepatch niho
+cargo install evalrs fd-find rofis daberu dokosa mamediff mamegrep grepatch niho kk jcfmt
