@@ -10,7 +10,7 @@ sudo apt update
 sudo apt install git tmux gcc make fish curl cmake pkg-config libssl-dev
 
 ## For Termux
-# pkg install binutils moreutils
+# pkg install binutils
 
 ##
 ## Rust
