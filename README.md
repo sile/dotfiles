@@ -9,6 +9,10 @@ $ cd dotfiles/
 
 $ ./install.sh
 $ ./setup.sh
+
+$ gh repo clone rust-lang/rust -- --filter=blob:none --sparse
+$ cd rust
+$ git sparse-checkout set library
 ```
 
 Font
