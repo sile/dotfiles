@@ -22,7 +22,6 @@ then
 fi
 
 rustup update
-rustup install nightly
 rustup component add rustfmt
 rustup component add clippy
 cargo install evalrs fd-find rofis daberu dokosa mamediff mamegrep grepatch niho kk jcfmt
