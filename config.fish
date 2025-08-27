@@ -2,11 +2,6 @@ set -U fish_user_paths $HOME/.cargo/bin $HOME/.local/bin
 
 set -x EDITOR kk
 
-# HTTP server
-if ! ps aux | grep rofis | grep -v grep > /dev/null
-    rofis -d -r $HOME
-end
-
 # git
 alias pull="git pull origin (git branch --show-current)"
 alias push="git push origin (git branch --show-current)"
