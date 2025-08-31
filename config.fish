@@ -8,7 +8,6 @@ alias push="git push origin (git branch --show-current)"
 
 # daberu
 alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
-alias autocommit "git commit -m (git diff --cached | daberu --system 'Generate one-line commit message from the git diff result')"
 set -x DABERU_LOG_PATH "$HOME/.daberu.jsonl"
 set -x DABERU_SHELL_EXECUTABLE "fish"
 
