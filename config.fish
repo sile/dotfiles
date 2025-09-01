@@ -11,14 +11,6 @@ alias eng="daberu --system 'Translate English to Japanese and show a refined Eng
 set -x DABERU_LOG_PATH "$HOME/.daberu.jsonl"
 set -x DABERU_SHELL_EXECUTABLE "fish"
 
-function autocommit
-    git commit -m (git diff --cached | env DABERU_LOG_PATH='' daberu -s 'Generate one-line commit message from the git diff result')
-end
-
-function jacommit
-    git commit -m (git diff --cached | daberu --system 'Generate one-line commit message from the git diff result in Japanese')
-end
-
 function fix
     daberu -s 'Fix TODO' $argv
 end
