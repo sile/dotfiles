@@ -10,6 +10,7 @@ alias push="git push origin (git branch --show-current)"
 alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
 set -x DABERU_LOG_PATH "$HOME/.daberu.jsonl"
 set -x DABERU_SHELL_EXECUTABLE "fish"
+set -x DABERU_MODEL claude-haiku-4-5-20251001
 
 function fix
     daberu -s 'Fix TODO' $argv
@@ -26,7 +27,7 @@ end
 set -x NIHO_DICTIONARY_FILE "$HOME/rust/niho/default-dic.jsonl"
 
 function gendic
-    daberu -s'find <WORD> and generate dic entries for WORD' -e"tail $NIHO_DICTIONARY_FILE" $argv
+    daberu -s'find entries with the "<HIRAGANA_WORD>" format in the given line. And generate dic entries for HIRAGANA_WORD' -e"cat $NIHO_DICTIONARY_FILE | tail" $argv
 end
 
 # mame
