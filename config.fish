@@ -27,7 +27,7 @@ end
 set -x NIHO_DICTIONARY_FILE "$HOME/rust/niho/default-dic.jsonl"
 
 function gendic
-    daberu -s'find entries with the "<HIRAGANA_WORD>" format in the given line. And generate dic entries for HIRAGANA_WORD' -e"cat $NIHO_DICTIONARY_FILE | tail" $argv
+    daberu -s'find entries with the "<HIRAGANA_WORD>" format in the given line. And generate dic entries (JSONL format) for HIRAGANA_WORD' -e"cat $NIHO_DICTIONARY_FILE | tail" $argv
 end
 
 # mame
