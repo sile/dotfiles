@@ -24,7 +24,7 @@ function doko
 end
 
 # niho
-set -x NIHO_DICTIONARY_FILE "$HOME/rust/niho/dictionaries/default.jsonl"
+set -x NIHO_DICTIONARY_FILE "$HOME/rust/niho/dics/default.jsonl"
 
 function gendic
     daberu -s'find entries with the HIRAGANA_ format in the given line. And generate dic kanji entries (JSONL format) for HIRAGANA' -e"cat $NIHO_DICTIONARY_FILE | tail -20" $argv
