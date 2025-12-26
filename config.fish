@@ -9,7 +9,7 @@ alias push="git push origin (git branch --show-current)"
 # daberu
 alias eng="daberu --system 'Translate English to Japanese and show a refined English version.'"
 set -x DABERU_LOG_PATH "$HOME/.daberu.jsonl"
-set -x DABERU_SHELL_EXECUTABLE "fish"
+set -x DABERU_CONFIG_FILE "$HOME/rust/daberu/configs/sile.jsonc"
 set -x DABERU_MODEL claude-haiku-4-5-20251001
 
 function fix
