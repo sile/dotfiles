@@ -33,3 +33,6 @@ end
 # mame
 set -x MAMEDIFF_CONFIG_FILE "$HOME/rust/mamediff/configs/sile.jsonc"
 set -x MAMEGREP_CONFIG_FILE "$HOME/rust/mamegrep/configs/sile.jsonc"
+
+# tuke
+set TUKE_AUTO_RESIZE 1

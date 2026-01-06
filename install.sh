@@ -24,4 +24,4 @@ fi
 rustup update
 rustup component add rustfmt
 rustup component add clippy
-cargo install evalrs fd-find rofis daberu dokosa mamediff mamegrep grepatch niho kk jcfmt
+cargo install evalrs fd-find daberu mamediff mamegrep grepatch niho kk jcfmt
