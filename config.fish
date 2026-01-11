@@ -16,13 +16,6 @@ function fix
     daberu -s 'Fix TODO' $argv
 end
 
-# dokosa
-set -x DOKOSA_INDEX_FILE "$HOME/.dokosa"
-
-function doko
-    dokosa search $argv
-end
-
 # niho
 set -x NIHO_DICTIONARY_FILE "$HOME/rust/niho/dics/sile.jsonl"
 
